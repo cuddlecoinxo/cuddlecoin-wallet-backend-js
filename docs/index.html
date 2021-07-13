@@ -64,7 +64,7 @@
 				<a href="#master-build-status" id="master-build-status" style="color: inherit; text-decoration: none;">
 					<h4>Master Build Status</h4>
 				</a>
-				<p><a href="https://travis-ci.org/turtlecoin/cuddlecoin-wallet-backend-js"><img src="https://travis-ci.org/turtlecoin/cuddlecoin-wallet-backend-js.svg?branch=master" alt="Build Status"></a></p>
+				<p><a href="https://travis-ci.org/cuddlecoinxo/cuddlecoin-wallet-backend-js"><img src="https://travis-ci.org/cuddlecoinxo/cuddlecoin-wallet-backend-js.svg?branch=master" alt="Build Status"></a></p>
 				<a href="#npm" id="npm" style="color: inherit; text-decoration: none;">
 					<h4>NPM</h4>
 				</a>
@@ -72,7 +72,7 @@
 				<a href="#github" id="github" style="color: inherit; text-decoration: none;">
 					<h4>Github</h4>
 				</a>
-				<p><a href="https://github.com/turtlecoin/cuddlecoin-wallet-backend-js">https://github.com/turtlecoin/cuddlecoin-wallet-backend-js</a></p>
+				<p><a href="https://github.com/cuddlecoinxo/cuddlecoin-wallet-backend-js">https://github.com/cuddlecoinxo/cuddlecoin-wallet-backend-js</a></p>
 				<a href="#cuddlecoin-wallet-backend" id="cuddlecoin-wallet-backend" style="color: inherit; text-decoration: none;">
 					<h1>cuddlecoin-wallet-backend</h1>
 				</a>
@@ -98,14 +98,14 @@
 				<a href="#quick-start" id="quick-start" style="color: inherit; text-decoration: none;">
 					<h2>Quick Start</h2>
 				</a>
-				<p>You can find an <a href="https://github.com/turtlecoin/cuddlecoin-wallet-backend-js/tree/master/examples/example1">example project in the examples</a> folder.</p>
+				<p>You can find an <a href="https://github.com/cuddlecoinxo/cuddlecoin-wallet-backend-js/tree/master/examples/example1">example project in the examples</a> folder.</p>
 				<a href="#javascript" id="javascript" style="color: inherit; text-decoration: none;">
 					<h3>Javascript</h3>
 				</a>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> WB = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cuddlecoin-wallet-backend'</span>);
 
 <span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (</span>) =&gt;</span> {
-    <span class="hljs-keyword">const</span> daemon = <span class="hljs-keyword">new</span> WB.Daemon(<span class="hljs-string">'127.0.0.1'</span>, <span class="hljs-number">11898</span>);
+    <span class="hljs-keyword">const</span> daemon = <span class="hljs-keyword">new</span> WB.Daemon(<span class="hljs-string">'127.0.0.1'</span>, <span class="hljs-number">12898</span>);
     <span class="hljs-comment">/* OR
     const daemon = new WB.Daemon('blockapi.turtlepay.io', 443);
     */</span>
@@ -131,7 +131,7 @@
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { WalletBackend, Daemon, IDaemon } <span class="hljs-keyword">from</span> <span class="hljs-string">'cuddlecoin-wallet-backend'</span>;
 
 <span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
-    <span class="hljs-keyword">const</span> daemon: IDaemon = <span class="hljs-keyword">new</span> Daemon(<span class="hljs-params">'127.0.0.1', 11898</span>);
+    <span class="hljs-keyword">const</span> daemon: IDaemon = <span class="hljs-keyword">new</span> Daemon(<span class="hljs-params">'127.0.0.1', 12898</span>);
 
     <span class="hljs-comment">/* OR
     const daemon: IDaemon = new Daemon('blockapi.turtlepay.io', 443);
@@ -257,26 +257,26 @@
 					<h3>v4.0.9</h3>
 				</a>
 				<ul>
-					<li>Bump <code>turtlecoin-utils</code></li>
+					<li>Bump <code>cuddlecoin-utils</code></li>
 				</ul>
 				<a href="#v408" id="v408" style="color: inherit; text-decoration: none;">
 					<h3>v4.0.8</h3>
 				</a>
 				<ul>
-					<li>Allow passing custom <code>checkRingSignatures</code> to <code>turtlecoin-utils</code></li>
-					<li>Bump <code>turtlecoin-utils</code> to support passing <code>checkRingSignatures</code></li>
+					<li>Allow passing custom <code>checkRingSignatures</code> to <code>cuddlecoin-utils</code></li>
+					<li>Bump <code>cuddlecoin-utils</code> to support passing <code>checkRingSignatures</code></li>
 				</ul>
 				<a href="#v407" id="v407" style="color: inherit; text-decoration: none;">
 					<h3>v4.0.7</h3>
 				</a>
 				<ul>
-					<li>Bump <code>turtlecoin-utils</code> to fix issue where transaction signatures would be misordered when supplying a custom <code>generateRingSignatures</code> function</li>
+					<li>Bump <code>cuddlecoin-utils</code> to fix issue where transaction signatures would be misordered when supplying a custom <code>generateRingSignatures</code> function</li>
 				</ul>
 				<a href="#v406" id="v406" style="color: inherit; text-decoration: none;">
 					<h3>v4.0.6</h3>
 				</a>
 				<ul>
-					<li>Bump <code>turtlecoin-utils</code> to fix issue in some environments</li>
+					<li>Bump <code>cuddlecoin-utils</code> to fix issue in some environments</li>
 				</ul>
 				<a href="#v405" id="v405" style="color: inherit; text-decoration: none;">
 					<h3>v4.0.5</h3>
@@ -299,7 +299,7 @@
 					<h3>v4.0.3</h3>
 				</a>
 				<ul>
-					<li>Update turtlecoin-utils</li>
+					<li>Update cuddlecoin-utils</li>
 					<li>Add error code <code>DAEMON_STILL_PROCESSING</code> returned when a transaction may or may not have failed</li>
 					<li>Fix bug causing balance double counts with fusions in rare case</li>
 				</ul>
@@ -394,7 +394,7 @@
 				</a>
 				<ul>
 					<li>Add <code>on(&#39;disconnect&#39;)</code> and <code>on(&#39;connect&#39;)</code> events for daemon</li>
-					<li>Update <code>turtlecoin-utils</code> dependency</li>
+					<li>Update <code>cuddlecoin-utils</code> dependency</li>
 				</ul>
 				<a href="#v342" id="v342" style="color: inherit; text-decoration: none;">
 					<h3>v3.4.2</h3>
@@ -432,7 +432,7 @@
 				</a>
 				<ul>
 					<li>Improve auto optimization</li>
-					<li>Update turtlecoin-utils dependency</li>
+					<li>Update cuddlecoin-utils dependency</li>
 					<li>Known regression - Transactions are broken. Update to 3.4.1</li>
 				</ul>
 				<a href="#v330" id="v330" style="color: inherit; text-decoration: none;">
@@ -484,7 +484,7 @@
 				<a href="#building-for-developers" id="building-for-developers" style="color: inherit; text-decoration: none;">
 					<h3>Building (For Developers)</h3>
 				</a>
-				<p><code>git clone https://github.com/turtlecoin/cuddlecoin-wallet-backend-js.git</code></p>
+				<p><code>git clone https://github.com/cuddlecoinxo/cuddlecoin-wallet-backend-js.git</code></p>
 				<p><code>cd cuddlecoin-wallet-backend</code></p>
 				<p><code>npm install -g yarn</code> (Skip this if you already have yarn installed)</p>
 				<p><code>yarn build</code></p>
