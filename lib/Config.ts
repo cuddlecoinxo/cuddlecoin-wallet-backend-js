@@ -211,7 +211,7 @@ export class Config implements IConfig {
      * The address prefix your coin uses - you can find this in CryptoNoteConfig.h.
      * In cuddlecoin, this converts to hugs
      */
-    public addressPrefix: number = 0x12c9f4;
+    public addressPrefix: number = 1231348;
 
     /**
      * Request timeout for daemon operations in milliseconds
