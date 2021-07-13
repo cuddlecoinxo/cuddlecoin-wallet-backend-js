@@ -473,7 +473,7 @@ function roundTrip(
        'isValidMnemonic doesn\'t work!');
 
     await tester.test(async () => {
-        const daemon2: IDaemon = new Daemon('127.0.0.1', 11898);
+        const daemon2: IDaemon = new Daemon('127.0.0.1', 12898);
 
         const wallet = WalletBackend.createWallet(daemon2);
 

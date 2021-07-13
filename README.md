@@ -1,6 +1,6 @@
 # cuddlecoin-wallet-backend
 
-Provides an interface to the TurtleCoin network, allowing wallet applications to be built.
+Provides an interface to the CuddleCoin network, allowing wallet applications to be built.
 
 * Downloads blocks from the network, either through a traditional daemon, or a blockchain cache for increased speed
 * Processes blocks, decrypting transactions that belong to the user
@@ -18,14 +18,14 @@ Yarn:
 
 ## Documentation
 
-[You can view the documentation here](https://turtlecoin.github.io/turtlecoin-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
+[You can view the documentation here](https://cuddlecoinxo.github.io/cuddlecoin-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
 
 You can see a list of all the other classes on the right side of the screen.
-Note that you will need to prefix them all with `WB.` to access them, if you are not using typescript style imports, assuming you imported with `const WB = require('turtlecoin-wallet-backend')`.
+Note that you will need to prefix them all with `WB.` to access them, if you are not using typescript style imports, assuming you imported with `const WB = require('cuddlecoin-wallet-backend')`.
 
 ## Quick Start
 
-You can find an [example project in the examples](https://github.com/turtlecoin/turtlecoin-wallet-backend-js/tree/master/examples/example1) folder.
+You can find an [example project in the examples](https://github.com/cuddlecoinxo/cuddlecoin-wallet-backend-js/tree/master/examples/example1) folder.
 
 ### Javascript
 
@@ -200,20 +200,20 @@ changed. The type of the `fee` parameter for `sendTransactionAdvanced` has chang
 
 ### v4.0.9
 
-* Bump `turtlecoin-utils`
+* Bump `cuddlecoin-utils`
 
 ### v4.0.8
 
-* Allow passing custom `checkRingSignatures` to `turtlecoin-utils`
-* Bump `turtlecoin-utils` to support passing `checkRingSignatures`
+* Allow passing custom `checkRingSignatures` to `cuddlecoin-utils`
+* Bump `cuddlecoin-utils` to support passing `checkRingSignatures`
 
 ### v4.0.7
 
-* Bump `turtlecoin-utils` to fix issue where transaction signatures would be misordered when supplying a custom `generateRingSignatures` function
+* Bump `cuddlecoin-utils` to fix issue where transaction signatures would be misordered when supplying a custom `generateRingSignatures` function
 
 ### v4.0.6
 
-* Bump `turtlecoin-utils` to fix issue in some environments
+* Bump `cuddlecoin-utils` to fix issue in some environments
 
 ### v4.0.5
 
@@ -230,7 +230,7 @@ changed. The type of the `fee` parameter for `sendTransactionAdvanced` has chang
 
 ### v4.0.3
 
-* Update turtlecoin-utils
+* Update cuddlecoin-utils
 * Add error code `DAEMON_STILL_PROCESSING` returned when a transaction may or may not have failed
 * Fix bug causing balance double counts with fusions in rare case
 
@@ -299,7 +299,7 @@ changed. The type of the `fee` parameter for `sendTransactionAdvanced` has chang
 ### v3.4.3
 
 * Add `on('disconnect')` and `on('connect')` events for daemon
-* Update `turtlecoin-utils` dependency
+* Update `cuddlecoin-utils` dependency
 
 ### v3.4.2
 
@@ -327,7 +327,7 @@ changed. The type of the `fee` parameter for `sendTransactionAdvanced` has chang
 ### v3.3.1
 
 * Improve auto optimization
-* Update turtlecoin-utils dependency
+* Update cuddlecoin-utils dependency
 * Known regression - Transactions are broken. Update to 3.4.1
 
 ### v3.3.0
@@ -355,7 +355,7 @@ changed. The type of the `fee` parameter for `sendTransactionAdvanced` has chang
 ### v3.0.0
 
 * Fix bug where using multiple wallet instances with different configs would only use the latest config.
-* API change - You must now provide a config to the Utilities/ValidateParameters functions if you are using a non default config, for example if you are using the library for another cryptocurrency. Otherwise, the default TurtleCoin config will be used.
+* API change - You must now provide a config to the Utilities/ValidateParameters functions if you are using a non default config, for example if you are using the library for another cryptocurrency. Otherwise, the default CuddleCoin config will be used.
 
 ### v2.0.0
 
@@ -365,9 +365,9 @@ Start of changelog.
 
 ### Building (For Developers)
 
-`git clone https://github.com/turtlecoin/turtlecoin-wallet-backend-js.git`
+`git clone https://github.com/cuddlecoinxo/cuddlecoin-wallet-backend-js.git`
 
-`cd turtlecoin-wallet-backend`
+`cd cuddlecoin-wallet-backend`
 
 `npm install -g yarn` (Skip this if you already have yarn installed)
 

@@ -1,4 +1,4 @@
-const WB = require('turtlecoin-wallet-backend');
+const WB = require('cuddlecoin-wallet-backend');
 const readline = require('readline');
 const util = require('util');
 
@@ -27,7 +27,7 @@ function sleep(ms) {
     let wallet;
 
     /* Initialise our blockchain cache api. Can use a public node or local node
-       with `const daemon = new WB.Daemon('127.0.0.1', 11898);` */
+       with `const daemon = new WB.Daemon('127.0.0.1', 12898);` */
     const daemon = new WB.Daemon('blockapi.turtlepay.io', 443);
 
     if (response === 'c') {
