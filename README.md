@@ -18,7 +18,7 @@ Yarn:
 
 ## Documentation
 
-[You can view the documentation here](https://cuddlecoinxo.github.io/cuddlecoin-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
+[You can view the documentation here](https://turtlecoin.github.io/cuddlecoin-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
 
 You can see a list of all the other classes on the right side of the screen.
 Note that you will need to prefix them all with `WB.` to access them, if you are not using typescript style imports, assuming you imported with `const WB = require('cuddlecoin-wallet-backend')`.
@@ -35,7 +35,7 @@ const WB = require('cuddlecoin-wallet-backend');
 (async () => {
     const daemon = new WB.Daemon('127.0.0.1', 12898);
     /* OR
-    const daemon = new WB.Daemon('blockapi.cuddlecoin.org', 443);
+    const daemon = new WB.Daemon('149.28.168.93', 11898);
     */
 
     const wallet = WB.WalletBackend.createWallet(daemon);
@@ -64,7 +64,7 @@ import { WalletBackend, Daemon, IDaemon } from 'cuddlecoin-wallet-backend';
     const daemon: IDaemon = new Daemon('127.0.0.1', 12898);
 
     /* OR
-    const daemon: IDaemon = new Daemon('blockapi.cuddlecoin.org', 443);
+    const daemon: IDaemon = new Daemon('149.28.168.93', 11898);
     */
 
     const wallet: WalletBackend = WalletBackend.createWallet(daemon);
@@ -151,6 +151,48 @@ In this example, we only print messages that fall into the SYNC category.
 You can view available categories and log levels in the documentation.
 
 ## Changelog
+
+### v6.0.7
+
+* Fix bug when scanning coinbase transactions and not using `/sync/raw`
+
+### v6.0.6
+
+* Upgrade cuddlecoin-utils and other dependencies
+* Documentation updates
+* Test suite updates
+
+### v6.0.5
+
+* Fix issue halting sync when transaction is missing a transaction public key
+
+### v6.0.4
+
+* Fix issue generating transactions with a ledger
+
+### v6.0.3
+
+* Update cuddlecoin-utils
+* New events emitted when a ledger is waiting for user input
+
+### v6.0.2
+
+* Fix object-sizeof being incorrectly imported
+
+### v6.0.2
+
+* Fix bug where package.json was not correctly read in npm release
+
+### v6.0.0
+
+* Supports v1.0.0 daemon API
+* No longer supports v0.28.3 daemon API
+* Supports using a ledger nano to control private keys
+* Can specify whether you want to sync with raw blocks or not when initializing daemon
+* Fix auto optimize disabling not working correctly
+* Warn users when using non native crypto
+* Can send extra data with tx
+* More prepared transaction functions
 
 ### v5.0.4
 
@@ -371,6 +413,8 @@ Start of changelog.
 
 `npm install -g yarn` (Skip this if you already have yarn installed)
 
+`yarn install`
+
 `yarn build`
 
 Generated javascript files will be written to the dist/lib/ folder.
@@ -384,10 +428,7 @@ Generated javascript files will be written to the dist/lib/ folder.
 ### Before making a PR
 
 * Ensure you are editing the TypeScript code, and not the JavaScript code (You should be in the `lib/` folder)
-* Ensure you have built the JavaScript code from the TypeScript code: `yarn build`
 * Ensure you have updated the documentation if necessary - Documentation is generated from inline comments, jsdoc style.
 * Ensure you have rebuilt the documentation, if you have changed it: `yarn docs`
 * Ensure the tests all still pass: `yarn test`, or `yarn test-all` if you have a local daemon running.
-* Ensure your code adheres to the style requirements: `yarn style`
-
-You can try running `yarn style --fix` to automatically fix issues.
+* If adding a feature/fixing a bug, adding a test to verify your fix/feature functions as expected would be great. But don't sweat it.
